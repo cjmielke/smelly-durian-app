@@ -229,31 +229,31 @@ export class ResizeAuxiliaryBarWidthAction extends Action2 {
 
 registerAction2(ResizeAuxiliaryBarWidthAction);
 
-class FocusPearAIExtensionAction extends Action2 {
-	static readonly ID = 'workbench.action.focusPearAIExtension';
+class FocusBananaAIExtensionAction extends Action2 {
+	static readonly ID = 'workbench.action.focusBananaAIExtension';
 	static readonly LABEL = localize2(
-		"focusPearAIExtension",
-		"Focus into PearAI Extension",
+		"focusBananaAIExtension",
+		"Focus into BananaAI Extension",
 	);
 
 	constructor() {
 		super({
-			id: FocusPearAIExtensionAction.ID,
-			title: FocusPearAIExtensionAction.LABEL,
+			id: FocusBananaAIExtensionAction.ID,
+			title: FocusBananaAIExtensionAction.LABEL,
 			category: Categories.View,
 			f1: true,
-			// keybinding: do not add keybinding CTRL/CMD L here, it comes from pearai extension
+			// keybinding: do not add keybinding CTRL/CMD L here, it comes from BananaAI extension
 		});
 	}
 
 	override async run(accessor: ServicesAccessor): Promise<void> {
-		// focus pearai extension
+		// focus BananaAI extension
 		const commandService = accessor.get(ICommandService);
-		commandService.executeCommand('pearai.focusContinueInput');
+		commandService.executeCommand('BananaAI.focusContinueInput');
 	}
 }
 
-registerAction2(FocusPearAIExtensionAction);
+registerAction2(FocusBananaAIExtensionAction);
 
 MenuRegistry.appendMenuItems([
 	{
@@ -261,7 +261,7 @@ MenuRegistry.appendMenuItems([
 		item: {
 			group: '0_workbench_toggles',
 			command: {
-				id: FocusPearAIExtensionAction.ID,
+				id: FocusBananaAIExtensionAction.ID,
 				title: `New Chat (${KeyModUtils.keyModToString(KeyMod.CtrlCmd)} + ${KeyCodeUtils.toString(KeyCode.KeyL)})`,
 			},
 			order: -1,
@@ -269,22 +269,22 @@ MenuRegistry.appendMenuItems([
 	},
 ]);
 
-// Following is a only PearAI related action, need to refactor these type of actions to separate file
+// Following is a only BananaAI related action, need to refactor these type of actions to separate file
 import { IOpenerService } from 'vs/platform/opener/common/opener';
 import { URI } from 'vs/base/common/uri';
 import { IProductService } from 'vs/platform/product/common/productService';
 
-class OpenPearAIDocsAction extends Action2 {
-	static readonly ID = 'workbench.action.openPearAIDocs';
+class OpenBananaAIDocsAction extends Action2 {
+	static readonly ID = 'workbench.action.openBananaAIDocs';
 	static readonly LABEL = localize2(
-		"openPearAIDocs",
-		"Open PearAI Documentation",
+		"openBananaAIDocs",
+		"Open BananaAI Documentation",
 	);
 
 	constructor() {
 		super({
-			id: OpenPearAIDocsAction.ID,
-			title: OpenPearAIDocsAction.LABEL,
+			id: OpenBananaAIDocsAction.ID,
+			title: OpenBananaAIDocsAction.LABEL,
 			category: Categories.Help,
 			f1: true,
 		});
@@ -293,21 +293,21 @@ class OpenPearAIDocsAction extends Action2 {
 	override async run(accessor: ServicesAccessor): Promise<void> {
 		const openerService = accessor.get(IOpenerService);
 		const productService = accessor.get(IProductService);
-		if (!productService.pearAILinks?.docs) {
+		if (!productService.BananaAILinks?.docs) {
 			return;
 		}
-		await openerService.open(URI.parse(productService.pearAILinks?.docs));
+		await openerService.open(URI.parse(productService.BananaAILinks?.docs));
 	}
 }
 
-registerAction2(OpenPearAIDocsAction);
+registerAction2(OpenBananaAIDocsAction);
 
 MenuRegistry.appendMenuItems([
 	{
 		id: MenuId.CommandCenter,
 		item: {
 			command: {
-				id: OpenPearAIDocsAction.ID,
+				id: OpenBananaAIDocsAction.ID,
 				title: 'Docs',
 			},
 			order: 150,

@@ -2,7 +2,7 @@
 
 set -e
 
-cd extensions/pearai-submodule
+cd extensions/BananaAI-submodule
 ./scripts/install-and-build.sh
 cd ../..
 

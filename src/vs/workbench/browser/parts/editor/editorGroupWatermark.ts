@@ -26,9 +26,9 @@ interface WatermarkEntry {
 	readonly when?: ContextKeyExpression;
 }
 
-const openPearAIChat: WatermarkEntry = { text: localize('watermark.openPearAIChat', "Open Chat"), id: 'pearai.focusContinueInput', when: ContextKeyExpr.has('pearAIExtensionLoaded') };	 
-const bigChat: WatermarkEntry = { text: localize('watermark.pearAIBigChat', "Big Chat"), id: 'pearai.resizeAuxiliaryBarWidth', when: ContextKeyExpr.has('pearAIExtensionLoaded') };
-const prevChat: WatermarkEntry = { text: localize('watermark.pearAIPrevChat', "Previous Chat"), id: 'pearai.loadRecentChat', when: ContextKeyExpr.has('pearAIExtensionLoaded') };
+const openBananaAIChat: WatermarkEntry = { text: localize('watermark.openBananaAIChat', "Open Chat"), id: 'BananaAI.focusContinueInput', when: ContextKeyExpr.has('BananaAIExtensionLoaded') };
+const bigChat: WatermarkEntry = { text: localize('watermark.BananaAIBigChat', "Big Chat"), id: 'BananaAI.resizeAuxiliaryBarWidth', when: ContextKeyExpr.has('BananaAIExtensionLoaded') };
+const prevChat: WatermarkEntry = { text: localize('watermark.BananaAIPrevChat', "Previous Chat"), id: 'BananaAI.loadRecentChat', when: ContextKeyExpr.has('BananaAIExtensionLoaded') };
 const showCommands: WatermarkEntry = { text: localize('watermark.showCommands', "Show All Commands"), id: 'workbench.action.showCommands' };
 const quickAccess: WatermarkEntry = { text: localize('watermark.quickAccess', "Go to File"), id: 'workbench.action.quickOpen' };
 const openFileNonMacOnly: WatermarkEntry = { text: localize('watermark.openFile', "Open File"), id: 'workbench.action.files.openFile', mac: false };
@@ -43,7 +43,7 @@ const toggleFullscreen: WatermarkEntry = { text: localize({ key: 'watermark.togg
 const showSettings: WatermarkEntry = { text: localize('watermark.showSettings', "Show Settings"), id: 'workbench.action.openSettings' };
 
 const noFolderEntries = [
-	openPearAIChat,
+	openBananaAIChat,
 	bigChat,
 	prevChat,
 	showCommands,
@@ -55,7 +55,7 @@ const noFolderEntries = [
 ];
 
 const folderEntries = [
-	openPearAIChat,
+	openBananaAIChat,
 	bigChat,
 	prevChat,
 	showCommands,
@@ -127,8 +127,8 @@ export class EditorGroupWatermark extends Disposable {
 	private async render(): Promise<void> {
 		// Wait for the all extensions to be activated
 		await this.extensionService.activateByEvent('onStartupFinished');
-		// TODO: @Himanshu-Singh-Chauhan - this should be set from inside the extension, test it later, if it works, remove this 
-		this.contextKeyService.createKey('pearAIExtensionLoaded', true); // Set a context key when the PearAI extension is loaded
+		// TODO: @Himanshu-Singh-Chauhan - this should be set from inside the extension, test it later, if it works, remove this
+		this.contextKeyService.createKey('BananaAIExtensionLoaded', true); // Set a context key when the BananaAI extension is loaded
 
 		const enabled = this.configurationService.getValue<boolean>('workbench.tips.enabled');
 

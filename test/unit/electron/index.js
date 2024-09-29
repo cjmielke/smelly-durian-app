@@ -232,11 +232,11 @@ app.on('ready', () => {
 		return {
 			product: {
 				version: '1.x.y',
-				nameShort: 'PearAI Dev',
-				nameLong: 'PearAI Dev',
-				applicationName: 'pearai',
-				dataFolderName: '.pearai',
-				urlProtocol: 'pearai',
+				nameShort: 'BananaAI Dev',
+				nameLong: 'BananaAI Dev',
+				applicationName: 'BananaAI',
+				dataFolderName: '.BananaAI',
+				urlProtocol: 'BananaAI',
 			}
 		};
 	});

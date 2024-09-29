@@ -1,46 +1,47 @@
-# PearAI: The Open Source AI-Powered Code Editor
+# BananaAI: The Open Source AI-Powered Code Editor
 
-Supercharge your development with an editor designed for less coding, using AI. PearAI is forked from VSCode and Continue, and aims to reduce the time from ideation to conception for your product development by achieving the most seamless integration with AI.
+Supercharge your development with an editor designed for less coding, using AI. BananaAI is forked from VSCode and Continue, and aims to reduce the time from ideation to conception for your product development by achieving the most seamless integration with AI.
 
-To download the full app, visit our homepage at https://trypear.ai.
+To download the full app, visit our homepage at https://trybanana.ai.
+
+![yes](assets/lefunny.jpeg)
+![bruh](assets/bruh.jpg) ([diff](https://github.com/trypear/pearai-app/commit/e5fa02d1a107f10b478c5ea1631eeb0a7b297f39#diff-d0ed4cc3fb70489fe51c7e0ac180cba2a7472124f9f9e9ae67b01a37fbd580b7R7))
 
 ## Features
-* **Knows your code** - Pear has context on your codebase so you can ask questions directly (code is stored locally on your computer).
-* **UI/UX focused** - Pear puts the user experience first, making developing as seamless as possible.
-* **Familiar feel** - Pear is a fork of VSCode, so you can pick up exactly where you left off.
+* **Knows your code** - Banana has context on your codebase so you can ask questions directly (code is stored locally on your computer).
+* **UI/UX focused** - Banana puts the user experience first, making developing as seamless as possible.
+* **Familiar feel** - Banana is a fork of VSCode, so you can pick up exactly where you left off.
 
-See all features [here](https://trypear.ai/docs).
+See all features [here](https://trybanana.ai/docs).
 
 ## Master Doc
 
-Our [Master Document](https://docs.google.com/document/d/14jusGNbGRPT8X6GgEDbP1iab5q4X7_y-eFXK7Ky57IQ/edit) contains all links relevant to PearAI.
+Our [Master Document](https://slop.rocks) contains all links relevant to BananaAI.
 
 ## Contributing
 
-We welcome contributions from the community! Whether you're fixing a bug, improving the documentation, or adding a new feature, we appreciate your help in making PearAI better. There is a lot of context involved and we understand it can be overwhelming when first trying to join the project. Here is a quick summary of key information and how we currently work together:
-- Pan and Nang conduct "Quests", which are 1-3 weeks sprints. We will pick out the current highest priority issues for these quests, ping everyone in our [Discord]([url](https://discord.gg/7QMraJUsQt)), and ask for applications to participate in them. The chosen people will help finish the tasks alongside us, participating in calls and working together. If help is needed, we may add more people to the quest. You can see the current open quests [here](https://github.com/orgs/trypear/projects?query=is%3Aopen).
-- Outside of dedicated Quests, we also have a bunch of issues ([good first ones](https://github.com/trypear/pearai-app/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)) which are free to tackle. Make sure to leave a comment indicating you're working on it (check for existing comments also). You can raise a PR anytime and we usually review them pretty quickly.
+We welcome contributions from the community! Whether you're fixing a bug, improving the documentation, or adding a new feature, we appreciate your help in making BananaAI better. There is a lot of context involved and we understand it can be overwhelming when first trying to join the project. Here is a quick summary of key information and how we currently work together:
+- Pan and Nang conduct "copy and pasting sessions", which are 1-3 weeks sprints. We will pick out the current highest priority issues for these re-appropriations, ping everyone in our [Discord]([url](https://discord.gg/XndZet2pWF)), and ask for applications to help us carefully lift them from the original creators. The chosen people will help finish the burglaries alongside us, participating in armed robberies and working together. If help is needed (we don't know what we are doing), we may add more people to the quest. You can see the current open quests [here](https://github.com/orgs/trybanana/projects?query=is%3Aopen).
+- Outside of dedicated renaming, we also have a bunch of issues ([good first ones](https://github.com/trybanana/BananaAI-app/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)) which are free to tackle. Make sure to leave a comment indicating you're working on it (check for existing comments also). You can raise a PR anytime and we usually review them pretty quickly.
 - We have a lot on our plate so it's easy for us to miss something. The best way to get our attention is to ping us directly in our Discord server.
 
-**Please review our coding [Contributing Guide](CONTRIBUTING.md) to set up your coding environment.** For any questions, join the [PearAI Discord](https://discord.gg/7QMraJUsQt)!
+**Please review our coding [Contributing Guide](CONTRIBUTING.md) to set up your coding environment.** For any questions, join the [BananaAI Discord](https://discord.gg/XndZet2pWF)!
 
 Curious about our stack?
-- PearAI is in TypeScript/Electron.js
-- PearAI landing page is Next.js/React with Supabase auth (TailwindCSS + Shadcn)
-- PearAI backend is a Python Flask server with Supabase database
+- BananaAI is in TypeScript/Electron.js
+- BananaAI landing page is Next.js/React with Supabase auth (TailwindCSS + Shadcn)
+- BananaAI backend is a Python Flask server with Supabase database
 - Logging/Telemetry is done with Axiom
 
 ## License
-Pear OSS is licensed under the Apache 2.0 license. See the LICENSE file for details.
+Banana OSS is licensed under the Apache 2.0 license. See the LICENSE file for details.
 
 ## Contact
-For any questions or issues, please open an issue or reach out in the PearAI [Discord](https://discord.gg/7QMraJUsQt).
+For any questions or issues, please open an issue or reach out in the BananaAI [Discord](https://discord.gg/XndZet2pWF).
 
 ## Acknowledgements
 
 Thanks to these wonderful people who have contributed to this project:
-- [nang-dev](https://github.com/nang-dev)
-- [Fryingpannn](https://github.com/Fryingpannn)
 - [ItWasEnder](https://github.com/ItWasEnder)
 - [Ellahinator](https://github.com/Ellahinator)
 - [akash3444](https://github.com/akash3444)
@@ -99,6 +100,8 @@ Thanks to these wonderful people who have contributed to this project:
 - [holger](https://github.com/holger)
 - [TyDunn](https://github.com/TyDunn)
 - [AkMoh](https://github.com/AkMoh)
+- [nang-dev](https://github.com/nang-dev)
+- [Fryingpannn](https://github.com/Fryingpannn)
 
 Feel free to join them and contribute!
 

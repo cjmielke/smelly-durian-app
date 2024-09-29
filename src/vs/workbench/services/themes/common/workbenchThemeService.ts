@@ -44,13 +44,13 @@ export enum ThemeSettings {
 }
 
 export enum ThemeSettingDefaults {
-	COLOR_THEME_DARK = 'Default PearAI Dark',
-	COLOR_THEME_LIGHT = 'Default PearAI Light',
+	COLOR_THEME_DARK = 'Default BananaAI Dark',
+	COLOR_THEME_LIGHT = 'Default BananaAI Light',
 	COLOR_THEME_HC_DARK = 'Default High Contrast',
 	COLOR_THEME_HC_LIGHT = 'Default High Contrast Light',
 
-	COLOR_THEME_DARK_OLD = 'Default PearAI Dark',
-	COLOR_THEME_LIGHT_OLD = 'Default PearAI Light',
+	COLOR_THEME_DARK_OLD = 'Default BananaAI Dark',
+	COLOR_THEME_LIGHT_OLD = 'Default BananaAI Light',
 
 	FILE_ICON_THEME = 'vs-seti',
 	PRODUCT_ICON_THEME = 'Default',

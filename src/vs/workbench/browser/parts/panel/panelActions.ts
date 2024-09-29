@@ -418,7 +418,7 @@ class MoveViewsBetweenPanelsAction extends Action2 {
 }
 
 
-// Move Pear AI extension to secondary side bar (Auxiliary Bar) (we want secondary side bar to be default loaction for extension)
+// Move Banana AI extension to secondary side bar (Auxiliary Bar) (we want secondary side bar to be default loaction for extension)
 class MovePearExtensionToAuxBarAction extends MoveViewsBetweenPanelsAction {
     static readonly ID = 'workbench.action.movePearExtensionToAuxBar';
 		readonly PearExtensionId;
@@ -426,11 +426,11 @@ class MovePearExtensionToAuxBarAction extends MoveViewsBetweenPanelsAction {
     constructor() {
         super(ViewContainerLocation.Sidebar, ViewContainerLocation.AuxiliaryBar, {
             id: MovePearExtensionToAuxBarAction.ID,
-            title: localize2('movePearExtensionToAuxBar', "Move Pear Extension to Auxiliary Bar"),
+            title: localize2('movePearExtensionToAuxBar', "Move Banana Extension to Auxiliary Bar"),
             category: Categories.View,
             f1: true
         });
-        this.PearExtensionId = 'workbench.view.extension.PearAI';
+        this.PearExtensionId = 'workbench.view.extension.BananaAI';
     }
 
     override run(accessor: ServicesAccessor): void {
